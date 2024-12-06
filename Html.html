@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; background-color: beige;color: #000;">Window Object Methods</h1>
+    <p>click any where to display "Hello World"</p>
+    <h2 id="test"></h2>
+    <button id="alert">alert</button>
+    <button id="confirm">confirm</button>
+    <button id="scroll">scroll</button>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+</body>
+<script>
+    // window.addEventListener("click", () => {
+    //     document.getElementById("test").innerHTML = "Hello World";
+    // })
+    document.getElementById("alert").addEventListener("click", () => {
+        alert("Hello World")
+    })
+    document.getElementById("confirm").addEventListener("click", () => {
+        let test = confirm("click yes or no!");
+        test ? console.warn(test) : console.error(test)
+        document.getElementById("test").innerHTML = test;
+    })
+    // window.addEventListener("click", () => {
+    //     const test = prompt("Enter text");
+    //     console.log(test);
+    //     document.getElementById("test").innerHTML = test
+    // })
+    document.getElementById('scroll').addEventListener('click', () => {
+        window.scrollTo(0, 500)
+        console.log(window.scrollY)
+        console.log(window.history.length)
+    })
+</script>
+
+</html>
